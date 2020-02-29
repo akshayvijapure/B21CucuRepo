@@ -24,22 +24,22 @@ public class BasicsOfRestAssured {
 //		Assert.assertTrue(200==actualStatCode);
 //	}
 	
-	@Test
-	public void TestErgast() {
-		Response res = RestAssured.get("https://ergast.com/api/f1/2017/circuits.json");
-		int actualStatCode = res.getStatusCode();
-		System.out.println("actualStatCode ="+actualStatCode);
-		Assert.assertTrue(200==actualStatCode);
-	}
-	@Test
-	public void TestF1(){
-		Response res = RestAssured.get("http://ergast.com/api/f1/2017/circuits.json");
-		int actualStatCode = res.getStatusCode();
-		System.out.println("actualStatCode ="+actualStatCode);
-		Assert.assertTrue(200==actualStatCode);
-		
-		String actualData= res.getBody().asString();
-		System.out.println("Data   ="+actualData);
-	}
+//	@Test
+//	public void TestErgast() {
+//		Response res = RestAssured.get("https://ergast.com/api/f1/2017/circuits.json");
+//		int actualStatCode = res.getStatusCode();
+//		System.out.println("actualStatCode ="+actualStatCode);
+//		Assert.assertTrue(200==actualStatCode);
+//	}
+//	@Test
+//	public void TestF1(){
+//		Response res = RestAssured.get("http://ergast.com/api/f1/2017/circuits.json");
+//		int actualStatCode = res.getStatusCode();
+//		System.out.println("actualStatCode ="+actualStatCode);
+//		Assert.assertTrue(200==actualStatCode);
+//		
+//		String actualData= res.getBody().asString();
+//		System.out.println("Data   ="+actualData);
+//	}
 
 }
